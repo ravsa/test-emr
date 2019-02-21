@@ -1,4 +1,4 @@
-print("HELLO WORLD")
+print("Started")
 
 from rudra import logger
 from rudra.data_store.aws import AmazonS3
@@ -32,3 +32,4 @@ print(aws_s3.is_connected())
 data = load_hyper_params()
 print(data)
 aws_s3.write_json_file(filename, data)
+print(aws_s3.read_generic_file('bootstrap.sh'))
