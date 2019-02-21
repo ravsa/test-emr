@@ -1,6 +1,9 @@
 print("HELLO WORLD")
 
 from rudra import logger
+from sys import argv
+from json import loads
+
 def load_hyper_params():
     """Load the hyper parameter from the command line args."""
     if len(argv) > 1:
